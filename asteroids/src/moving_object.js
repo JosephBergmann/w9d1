@@ -1,10 +1,19 @@
 console.log("Asteroid is working")
 
 function MovingObject(options) {
-    this.pos = options[pos]
-    this.vel = options[vel]
-    this.radius = options[radius]
-    this.color = options[color]
+    this.pos = options["pos"];
+    this.vel = options["vel"];
+    this.radius = options["radius"];
+    this.color = options["color"];
+  }
+
+    MovingObject.prototype.draw = function(context){
+      // context.fillStyle(this.color);
+      debugger
+      context.fillStyle = 'white'
+      context.beginPath()
+      context.arc(this.pos[0], this.pos[1], this.radius, 0, 2 * Math.pi);
+      context.fill()
   }
   
   module.exports = MovingObject;
