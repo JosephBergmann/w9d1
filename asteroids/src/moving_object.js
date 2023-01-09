@@ -8,11 +8,10 @@ function MovingObject(options) {
   }
 
     MovingObject.prototype.draw = function(context){
-      // context.fillStyle(this.color);
-      debugger
-      context.fillStyle = 'white'
+      context.fillStyle = 'black'
       context.beginPath()
-      context.arc(this.pos[0], this.pos[1], this.radius, 0, 2 * Math.pi);
+      // console.log(2 * Math.pi)
+      context.arc(this.pos[0], this.pos[1], this.radius, 0, 2 * Math.PI);
       context.fill()
   }
   

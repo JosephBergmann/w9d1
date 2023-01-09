@@ -24,10 +24,11 @@ document.addEventListener("DOMContentLoaded", function() {
     // context.fillRect(0,0, 400, 400);
 
     context.fillStyle = 'black'
-      context.beginPath()
-      context.arc(250, 250, 50, 0, (2 * Math.pi));
-      context.stroke()
+    //   context.beginPath()
+    //   context.lineWidth = 15;
+    //   context.arc(250, 250, 50, 0, (2 * Math.PI));
+    //   context.fill()
 
-    // mo.draw(context);
+    mo.draw(context);
 })
 
