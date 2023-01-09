@@ -30,5 +30,6 @@ document.addEventListener("DOMContentLoaded", function() {
     //   context.fill()
 
     mo.draw(context);
+    mo.move();
 })
 
